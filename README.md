@@ -1,7 +1,7 @@
 # social-hive
 A social media app built using MERN Stack
 
-## How to start:
+# How to start:
 
 cd social-hive // change directory to social-hive
 
