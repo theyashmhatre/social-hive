@@ -13,6 +13,11 @@ npm i //install dependencies for Front-End part
 
 cd .. //Move backwards to Social-Hive folder
 
+cd functions 
+
+firebase serve
+
+
 # Now that we're all set, we'll start using it.
 
 npm start //to run the Front-End
