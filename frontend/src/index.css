@@ -5,10 +5,13 @@ body {
 
 .navbarstyle {
     background-color: #ffffff;
-    
+    height: 50px;
 }
 .icon {
    
-    width:30px;
+    width:25px;
     /* Other styles here */
+}
+.linkbtn {
+    background-color: aqua;
 }

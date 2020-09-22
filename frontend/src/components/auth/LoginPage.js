@@ -3,7 +3,7 @@ import Base from '../core/Base';
 
 export default function LoginPage() {
     return (
-        <Base>
+        <Base >
         <div>
         <div>Register
 
