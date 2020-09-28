@@ -17,33 +17,33 @@ import user from './user.svg';
 
 const Menu =  ({ history })=> (
  
-  <nav className="navbar justify-content-center navbar-expand  navbarstyle">
+  <nav className="navbar justify-content-center navbar-expand shadow-sm  navbarstyle">
   <div className="container">
     <div className="navbar-header">
     <Link className="nav-link" >Social Hive  </Link>
     </div>
     <ul className="nav navbar-nav navbar-right">
-    {isAutheticated() && (  <li className="nav-item"><Link  className="nav-link" ><img src={home} className="icon"></img></Link></li> )}
-    {isAutheticated() && (  <li className="nav-item"><Link  className="nav-link" ><img src={send} className="icon"></img></Link></li> )}
-    {isAutheticated() && (  <li className="nav-item"><Link className="nav-link" ><img src={like} className="icon"></img></Link></li>)}
-    {isAutheticated() && ( <li className="nav-item"><Link  className="nav-link" ><img src={user} className="icon"></img></Link></li>)}
+    {isAutheticated() && (  <li className="nav-item"><Link  className="nav-link" ><img src={home} className="icon" alt=''></img></Link></li> )}
+    {isAutheticated() && (  <li className="nav-item"><Link  className="nav-link" ><img src={send} className="icon" alt=''></img></Link></li> )}
+    {isAutheticated() && (  <li className="nav-item"><Link className="nav-link" ><img src={like} className="icon" alt=''></img></Link></li>)}
+    {isAutheticated() && ( <li className="nav-item"><Link  className="nav-link" ><img src={user} className="icon" alt=''></img></Link></li>)}
     {!isAutheticated() && (
         <Fragment>
           <li className="nav-item">
             <Link
               className="nav-link"
-              to="/signup"
+              to="/signin"
             >
               
-              <button className='navbar-btn btn btn-outline-primary'>Login</button>
+              <button className='navbar-btn btn btn-outline-primary'>Signin</button>
             </Link>
           </li>
           <li className="nav-item ">
             <Link
               className="nav-link"
-              to="/signin"
+              to="/register"
             >
-           <button className='navbar-btn btn btn-outline-primary'>Signup</button>
+           <button className='navbar-btn btn btn-outline-primary'>Register</button>
             </Link>
           </li>
         </Fragment>

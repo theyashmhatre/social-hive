@@ -1,28 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Base from '../core/Base';
-import { Link} from "react-router-dom";
 
-export default function RegisterPage() {
+const SigninPage = () =>  {
     return (
         <Base >
-       <div class="login-form ">
-    <form action="/examples/actions/confirmation.php" method="post">
-        <h2 class="text-center">Register</h2>		
+        <div className="login-form ">
+    <form >
+        <h2 class="text-center">Sign in</h2>		
         <div class="text-center social-btn">
-            
-			<Link class="btn btn-primary btn-block" to='/'><i class="fa fa-google"></i> Register with <b>Google</b></Link>
+			<Link class="btn btn-primary btn-block" to='/'><i class="fa fa-google"></i> Sign in with <b>Google</b></Link>
         </div>
 		<div class="or-seperator"><i>or</i></div>
-    <div class="form-group">
-        	<div class="input-group">                
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <span class="fa fa-envelope"></span>
-                    </span>                    
-                </div>
-                <input type="text" class="form-control" name="email" placeholder="email" required="required"/>
-            </div>
-        </div>
         <div class="form-group">
         	<div class="input-group">                
                 <div class="input-group-prepend">
@@ -44,13 +33,18 @@ export default function RegisterPage() {
             </div>
         </div>        
         <div class="form-group">
-            <button type="submit" class="btn btn-success btn-block login-btn">Register</button>
+            <button type="submit" class="btn btn-success btn-block login-btn">Sign in</button>
         </div>
-     
+        <div class="clearfix">
+            <label class="float-left form-check-label"><input type="checkbox"/> Remember me</label>
+            <Link  class="float-right text-success">Forgot Password?</Link>
+        </div>  
         
     </form>
-    
+    <div class="hint-text">Don't have an account? <Link class="text-success" to='/register'>Register Now!</Link></div>
 </div>
-        </Base>
-    )
-}
+    </Base>
+    );
+};
+
+export default SigninPage;

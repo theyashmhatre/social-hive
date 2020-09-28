@@ -5,9 +5,7 @@ import Menu from "./Menu";
 // body - #fafafa
 
 const Base = ({
-  title = "My Title",
-  description = "My desription",
-  className = "bg-dark text-white p-4",
+  className ,
   children
 }) => (
     
